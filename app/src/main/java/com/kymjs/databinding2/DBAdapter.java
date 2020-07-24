@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.databinding.BindingAdapter;
 import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -74,9 +73,8 @@ public class DBAdapter extends RecyclerView.Adapter<DBAdapter.DBViewHolder> {
 //        }
         if (imageView instanceof ImageView) {
             Glide.with(imageView).load(url)
-                    .placeholder(R.mipmap.ic_launcher)
-                    .error(R.mipmap.ic_launcher)
-                    .centerCrop()
+//                    .placeholder(R.mipmap.ic_launcher)
+//                    .error(R.mipmap.ic_launcher)
                     .into((ImageView) imageView);
         } else {
 //            Glide.with(imageView).load(url)

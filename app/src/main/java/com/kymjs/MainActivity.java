@@ -11,7 +11,9 @@ import com.kymjs.databinding.DataBindingActivity;
 import com.kymjs.databinding.R;
 import com.kymjs.databinding2.DataBindingActivity2;
 import com.kymjs.livedata.TestLiveDataActivity;
-import com.kymjs.mvpvm.DemoActivity;
+import com.kymjs.mvpvm.demo.DemoActivity;
+import com.kymjs.mvpvm.demo.DemoActivity2;
+import com.kymjs.mvpvm.demo.MVVMActivity;
 import com.kymjs.viewmodel.TestViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,11 +56,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button button5 = findViewById(R.id.button5);
-        button5.setText("MVPVM 演示");
+        button5.setText("MVP 演示");
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(view.getContext(), DemoActivity.class));
+            }
+        });
+        Button button6 = findViewById(R.id.button6);
+        button6.setText("MVPVM 演示");
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(view.getContext(), DemoActivity2.class));
+            }
+        });
+        Button button7 = findViewById(R.id.button7);
+        button7.setText("MVVM 演示");
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(view.getContext(), MVVMActivity.class));
             }
         });
 

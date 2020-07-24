@@ -1,4 +1,4 @@
-package com.kymjs.mvpvm;
+package com.kymjs.mvpvm.demo;
 
 import android.os.Bundle;
 import android.view.View;

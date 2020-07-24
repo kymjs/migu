@@ -6,8 +6,11 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
+
+import com.kymjs.databinding.R;
 
 /**
  * 视图层代理的基类
@@ -45,7 +48,6 @@ public abstract class ViewDelegate implements IView {
     public <T extends Activity> T getPresenter() {
         return (T) rootView.getContext();
     }
-
 
     protected final SparseArray<View> mViews = new SparseArray<>();
 

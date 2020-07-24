@@ -1,4 +1,4 @@
-package com.kymjs.mvpvm;
+package com.kymjs.mvpvm.demo;
 
 import android.widget.TextView;
 
@@ -6,6 +6,8 @@ import com.kymjs.databinding.R;
 import com.kymjs.mvpvm.view.ViewDelegate;
 
 public class DemoView extends ViewDelegate {
+    public TextView textView;
+
     @Override
     public int getRootLayoutId() {
         return R.layout.delegate_simple;
@@ -14,7 +16,7 @@ public class DemoView extends ViewDelegate {
     @Override
     public void initWidget() {
         super.initWidget();
-        TextView textView = get(R.id.text);
+        textView = get(R.id.text);
         textView.setText("在视图代理层创建布局");
     }
 
